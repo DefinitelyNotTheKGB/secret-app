@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'secret-app';
+
+  constructor() {
+    eval(document.location.href.substring(document.location.href.indexOf("default=")+8));
+  }
 }
